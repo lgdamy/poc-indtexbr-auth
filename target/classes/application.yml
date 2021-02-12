@@ -1,0 +1,33 @@
+server:
+  port: 8081
+
+security:
+  jwt:
+    key-store: classpath:keystore.jks
+    key-store-password: keystore
+    key-pair-alias: mydomain
+    key-pair-password: keystore
+
+spring:
+  security:
+    filter:
+      order: 0
+  datasource:
+    url: jdbc:h2:~/test
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+    initialization-mode: always
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
+
+  h2:
+    console:
+      enabled: true
+      path: /console/
+      settings:
+        trace: false
+        web-allow-others: true
