@@ -1,8 +1,10 @@
 com/tcc/config/WebConfiguration.class
 META-INF/spring-configuration-metadata.json
 com/tcc/config/SecurityProperties$JwtProperties.class
+com/tcc/config/JWTAuthenticationFilter.class
 com/tcc/config/CustomFilter.class
 com/tcc/config/AuthorizationServerConfiguration.class
 com/tcc/OauthServer/OauthServerApplication.class
 com/tcc/config/SecurityProperties.class
 com/tcc/config/WebSecurityConfiguration.class
+com/tcc/config/EntryPointConfigurer.class

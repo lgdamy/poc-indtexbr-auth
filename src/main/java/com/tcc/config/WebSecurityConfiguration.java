@@ -67,13 +67,12 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
-                .antMatchers("/**").permitAll()
-                .and().httpBasic()
+        http.authorizeRequests().anyRequest().permitAll().and().httpBasic().and()
+
                 //.uthenticationEntryPoint(entryPointConfigurer)
 
                 //.and().addFilterAfter(new JWTAuthenticationFilter(authenticationManager()), UsernamePasswordAuthenticationFilter.class)
-                //.addFilter(new JWTAuthenticationFilter(authenticationManager()))
+                .addFilter(new JWTAuthenticationFilter(authenticationManager()))
         ;
     }
 

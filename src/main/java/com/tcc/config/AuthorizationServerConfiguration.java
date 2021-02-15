@@ -92,7 +92,8 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
                 .authenticationManager(this.authenticationManager)
                 .accessTokenConverter(jwtAccessTokenConverter())
                 .userDetailsService(this.userDetailsService)
-                .tokenStore(tokenStore());
+                .tokenStore(tokenStore())
+        ;
     }
 
     @Override
@@ -100,9 +101,7 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
         oauthServer
                 .passwordEncoder(this.passwordEncoder)
                 .tokenKeyAccess("permitAll()")
-                .checkTokenAccess("isAuthenticated()")
-
-        .allowFormAuthenticationForClients();
+                .checkTokenAccess("isAuthenticated()");
     }
 
     private KeyPair keyPair(SecurityProperties.JwtProperties jwtProperties, KeyStoreKeyFactory keyStoreKeyFactory) {
