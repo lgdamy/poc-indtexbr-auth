@@ -65,15 +65,5 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
         return userDetailsService;
     }
 
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests().anyRequest().permitAll().and().httpBasic().and()
-
-                //.uthenticationEntryPoint(entryPointConfigurer)
-
-                //.and().addFilterAfter(new JWTAuthenticationFilter(authenticationManager()), UsernamePasswordAuthenticationFilter.class)
-                .addFilter(new JWTAuthenticationFilter(authenticationManager()))
-        ;
-    }
 
 }
