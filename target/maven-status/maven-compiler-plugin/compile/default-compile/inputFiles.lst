@@ -1,8 +1,0 @@
-/home/programmer/desenvolvimento/tcc/code/poc-indtexbr-auth/src/main/java/com/tcc/OauthServer/OauthServerApplication.java
-/home/programmer/desenvolvimento/tcc/code/poc-indtexbr-auth/src/main/java/com/tcc/config/CustomFilter.java
-/home/programmer/desenvolvimento/tcc/code/poc-indtexbr-auth/src/main/java/com/tcc/config/WebSecurityConfiguration.java
-/home/programmer/desenvolvimento/tcc/code/poc-indtexbr-auth/src/main/java/com/tcc/config/EntryPointConfigurer.java
-/home/programmer/desenvolvimento/tcc/code/poc-indtexbr-auth/src/main/java/com/tcc/config/SecurityProperties.java
-/home/programmer/desenvolvimento/tcc/code/poc-indtexbr-auth/src/main/java/com/tcc/config/WebConfiguration.java
-/home/programmer/desenvolvimento/tcc/code/poc-indtexbr-auth/src/main/java/com/tcc/config/AuthorizationServerConfiguration.java
-/home/programmer/desenvolvimento/tcc/code/poc-indtexbr-auth/src/main/java/com/tcc/config/JWTAuthenticationFilter.java
