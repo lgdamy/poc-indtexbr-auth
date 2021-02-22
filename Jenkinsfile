@@ -34,7 +34,7 @@ pipeline {
     stage('qa-test') {
       steps {
         sh 'echo Iniciando os testes'
-        sh 'sleap 3'
+        sh 'sleep 3'
         sh 'echo Testes finalizados com sucesso'
       }
     }
